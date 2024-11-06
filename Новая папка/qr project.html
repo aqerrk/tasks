@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qazaq Republic</title>
+    <link rel="stylesheet" href="qr style.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="scrolling-text">
+                <span><b>NEW COLLECTION</b></span>
+                <span><b>•</b></span>
+                <span><b>FW24</b></span>
+                <span><b>•</b></span>
+                <span><b>NEW COLLECTION</b></span>
+                <span><b>•</b></span>
+                <span><b>FW24</b></span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="qr project.html"><img src="c:\Users\User\Pictures\Screenshots\Снимок экрана 2024-11-05 130646.png" style="width: 30px; height: 30px;"></a>
+            <a href="shop.html">SHOP</a>
+            <a href="lookbook.html">LOOKBOOK</a>
+            <a href="giftboxes.html">GIFTBOXES</a>
+            <a href="sale.html">SALE</a>
+            <a href="story.html">STORES</a>
+            <a href="children.html">CHILDREN</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+   <main class="main1">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_16_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_15_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_11_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_10_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_9_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_14_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_8_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_6_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_5_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_1_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_7_2024-11-04_12-08-58.jpg">
+    <img src="c:\Users\User\Downloads\Telegram Desktop\photo_3_2024-11-04_12-08-58.jpg">
+   </main>
+    <footer>
+        <div class="footer-content">
+            <h2>QAZAQ REPUBLIC</h2>
+            <div class="footer-links">
+                <a href="shop.html">SHOP</a>
+                <button id="aboutButton" style="border:none; background:none">ABOUT US</button>
+                <p id="aboutText" style="display: none;color:blue;">Qazaq Republic is one of the leading clothing brands in Kazakhstan, established in 2017. 
+
+                    The brand specializes in creating high-quality and comfortable clothes for every day.
+                    
+                    All QR products are fully compatible with each other.</p>
+            
+                <script>
+                   
+                    const aboutButton = document.getElementById("aboutButton");
+                    const aboutText = document.getElementById("aboutText");
+            
+                   
+                    aboutButton.addEventListener("click", function() {
+                      
+                        if (aboutText.style.display === "none") {
+                            aboutText.style.display = "block"; 
+                            aboutButton.textContent = "Hide ABOUT US";
+                        } else {
+                            aboutText.style.display = "none";
+                            aboutButton.textContent = "ABOUT US"; 
+                        }
+                    });
+                </script>
+                <a href="#">FAQ</a>
+                <button id="careerButton" style="border:none; background:none">CAREER IN QR</button>
+                <p id="careerText" style="display: none; color:blue;">
+                    Qazaq Republic is a Kazakh clothing brand that was founded in 2017. Today, Qazaq Republic is one of the most recognizable domestic brands in Kazakhstan. We continue to grow and at the moment the company employs about 200 young, promising and ambitious employees, just like you.
+                
+                    A career in our company is an exciting path on which you can develop and achieve your professional goals. We strive to create an environment that helps our employees grow and thrive by offering many opportunities for learning, development and career advancement.
+                
+                    We take a systematic approach to the career development of our employees, offering numerous opportunities for professional development, training and development of both hard skills and soft skills. We also support our employees in their pursuit of professional growth by offering ways to advance within the company.
+                
+                    The main values of our company:
+                    Care
+                    Customer
+                    Res
+                </p>
+                
+                <script>
+                    const careerButton = document.getElementById("careerButton");
+                    const careerText = document.getElementById("careerText");
+                
+                    careerButton.addEventListener("click", function() {
+                        
+                        if (careerText.style.display === "none") {
+                            careerText.style.display = "block";
+                            careerButton.textContent = "Hide CAREER IN QR"; 
+                        } else {
+                            careerText.style.display = "none";
+                            careerButton.textContent = "CAREER IN QR"; 
+                        }
+                    });
+                </script>
+                <button id="contactsButton" style="border:none; background:none">CONTACTS</button>
+                    <p id="contactsText" style="display: none;COLOR:BLUE">
+                        You can reach us at:
+                        <br>Email: info@qazaqrepublic.kz
+                        <br>Phone: +7 (727) 123-45-67
+                        <br>Address: Almaty, Kazakhstan, 123 Main Street
+                    </p>
+                    
+                    <script>
+                       
+                        const contactsButton = document.getElementById("contactsButton");
+                        const contactsText = document.getElementById("contactsText");
+                    
+                       
+                        contactsButton.addEventListener("click", function() {
+                           
+                            if (contactsText.style.display === "none") {
+                                contactsText.style.display = "block"; 
+                                contactsButton.textContent = "Hide CONTACTS";
+                            } else {
+                                contactsText.style.display = "none"; 
+                                contactsButton.textContent = "CONTACTS";
+                            }
+                        });
+                    </script>
+                <a href="#">PAYMENT</a>
+                <button id="deliveryButton" style="border:none; background:none">DELIVERY</button>
+<p id="deliveryText" style="display: none;COLOR:BLUE;">
+    We offer fast and reliable delivery across Kazakhstan. Standard delivery takes 3-5 business days, and express delivery is available within 1-2 business days. 
+    <br><br>
+    Delivery costs are calculated based on your location and will be displayed at checkout. Free delivery is offered for orders over 20,000 KZT.
+</p>
+
+<script>
+    
+    const deliveryButton = document.getElementById("deliveryButton");
+    const deliveryText = document.getElementById("deliveryText");
+
+  
+    deliveryButton.addEventListener("click", function() {
+        
+        if (deliveryText.style.display === "none") {
+            deliveryText.style.display = "block";
+            deliveryButton.textContent = "Hide DELIVERY"; 
+        } else {
+            deliveryText.style.display = "none";
+            deliveryButton.textContent = "DELIVERY";
+        }
+    });
+</script>
+                <a href="#">REFUNDS</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">PUBLIC OFFER</a>
+                <a href="#">FOR CORPORATE CLIENTS</a>
+            </div>
+            <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-button" target="_blank">
+                <img src="https://avatars.mds.yandex.net/i?id=6c9c9c00625857156f631eecf3185caecdc8cf0d-4538204-images-thumbs&n=13" alt="WhatsApp">
+            </a>
+            <div class="newsletter">
+    <input type="email" id="email" placeholder="E-mail" required>
+    <button id="submitEmail">Subscribe</button>
+    <p id="message"></p>
+            </div>
+            <script>
+                const emailInput = document.getElementById("email");
+                const submitButton = document.getElementById("submitEmail");
+                const message = document.getElementById("message");
+        
+    
+                submitButton.addEventListener("click", function() {
+                    const email = emailInput.value;
+        
+            
+                    if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                        message.textContent = "Thank you! Your e-mail has been submitted.";
+                        message.style.color = "green";
+                    } else {
+                        message.textContent = "Please enter a valid e-mail address.";
+                        message.style.color = "red";
+                    }
+                });
+            </script>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         body{
+            background-color: #fafdff7d;
+            font-family: Arial, sans-serif;
+        }
+
+.top-bar span {
+    margin: 0 10px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111AAE;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.navbar {
+    position: sticky;
+    top: 40px; 
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    z-index: 999;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition:color 0,5s ease;
+}
+.navbar a:hover{
+    color:red
+}
+
+.navbar a.sale {
+    color: red;
+}
+.top-bar {
+    background-color: #111AAE;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.top-bar span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-bar .scrolling-text {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+}
+main img{
+        width: 100%;
+       }
+       h2{
+        color: blue;
+       }
+       main{
+        display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin-top:5px;
+gap: 10px;
+       }
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+footer {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:black;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+footer p {
+    font-size: 12px;
+    color: #666;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+@media (max-width:480px){
+        .navbar {
+        padding: 10px;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+
+    .top-bar {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+        main{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main img{
+    width: 100%;
+    object-fit: cover;
+    }
+}
+    </style>
+    <header>
+        <div class="top-bar">
+            <div class="scrolling-text">
+                <span><b>NEW COLLECTION</b></span>
+                <span><b>•</b></span>
+                <span><b>FW24</b></span>
+                <span><b>•</b></span>
+                <span><b>NEW COLLECTION</b></span>
+                <span><b>•</b></span>
+                <span><b>FW24</b></span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="qr project.html"><img src="c:\Users\User\Pictures\Screenshots\Снимок экрана 2024-11-05 130646.png" style="width: 30px; height: 30px;"></a>
+            <a href="shop.html">SHOP</a>
+            <a href="lookbook.html">LOOKBOOK</a>
+            <a href="giftboxes.html">GIFTBOXES</a>
+            <a href="sale.html">SALE</a>
+            <a href="story.html">STORES</a>
+            <a href="children.html">CHILDREN</a>
+        </nav>
+        <h1>children</h1>
+    </header>
+    <main>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\dzogger-b0717cea38-f888fc40b8feee53d21ab423fcaa297c.jpeg">
+            <h3>KIDS HOODIE WRQ BLUE</h3>
+            <h2>18.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\hoodie-wrq-beige-ce2e6ff4e1-455d7b5a8632eb4c51483dbe2bd66555.jpeg">
+            <h3>KIDS HOODIE WRQ BEIGE</h3>
+            <h2>18.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\hoodie-bq-navy-aff0913a57-4c0c5bfd3c325ced4e161500935c5e65.jpeg">
+            <h3>KIDS HOODIE BORN QAZAQ DARK BLUE</h3>
+            <h2>18.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\hoodie-bq-maroon-4c6c85f293-261a0eb5fd1ee236e97ba974ad58cfbf.jpeg">
+            <h3>KIDS HOODIE BORN QAZAQ DARK RED</h3>
+            <h2>18.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\sweatshirt-s-club-purple-517fabfa17-795ada6e9b80bec0508bac8925e8337b.jpeg">
+            <h3>KIDS SWEATHER SENBI CLUB VIOLET</h3>
+            <h2>16.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\sweatshirt-puppy-navy-af7548c353-9eded013a1038fa9c648c6e30821ba25.jpeg">
+            <h3>KIDS SWEATHER PUPPY DARK BLUE</h3>
+            <h2>16.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\sweatshirt-qrl-blue-ef764f7d6f-7137cbf6cf25cfb49111a23949d294d8.jpeg">
+            <h3>KIDS SWEATHER QAZAQ REPUBLIC BLUE</h3>
+            <h2>16.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\sweatshrt-qrl-navy-f323a48703-7acfce9a31577a653e369ab3a977fe97.jpeg">
+            <h3>KIDS SWEATHER QAZAQ REPUBLIC DARK BLUE</h3>
+            <h2>16.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\bq-f42567deee-3bc209a402ba353b88eb1141559e3843.jpeg">
+            <h3>KIDS SWEATHER BORN QAZAQ GREEN</h3>
+            <h2>11.200₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\omir-ozen-93b89d6649-7fec6ddfbb49040ce39c3ba8519e8ed8.jpeg">
+            <h3>KIDS SWEATHER ÖMIR ÖZEN WHITE</h3>
+            <h2>11.200₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\jk-1-4860a35ad9-fea62fdf3f0c81f8664794a7f815aa0d.jpeg">
+            <h3>KIDS SWEATHER  JAQSY KÜNDER VIOLET</h3>
+            <h2>11.200₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\t-shirt-s-club-blue-ef1cd18cba-a2b53377ccb94f35f5937217179c8928.jpeg">
+            <h3>KIDS T-SHIRT SENBI CLUB BLUE</h3>
+            <h2>9.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\t-shirt-s-club-orange-2a014260f6-92e316118ecd25e8c14b5850b2c8eced.jpeg">
+            <h3>KIDS T-SHIRT SENBI CLUB MUSTARD</h3>
+            <h2>9.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\t-shirt-puppy-navy-dedc949268-9cedfa992bfd1e69927989a2afa763e4.jpeg">
+            <h3>KIDS T-SHIRT PUPPY DARK BLUE</h3>
+            <h2>9.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\t-shirt-jk-beige-f04dee1c86-aefa8c4d18d70de9f50faacf09d15331.jpeg">
+            <h3>KIDS T-SHIRT JAQSY KÜNDER BEIGE</h3>
+            <h2>9.000₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-tee-jk-melange-3d2fb2bd5f-d223e98697a32d695270f4e44a69ab66.jpeg">
+            <h3>KIDS T-SHIRT JAQSY KÜNDER GREY MELANGE</h3>
+            <h2>6.400₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-tee-qrep-melange-d3ef5eb29b-8826d0eb38bce35b1c4d02a0f2a189e5.jpeg">
+            <h3>KIDS T-SHIRT QREP GREY MELANGE</h3>
+            <h2>6.400₸</h2>
+        </div>
+        <div class="child">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-hoodie-zipper-bl-d022799246-c4176920c4c66b5ef1b83fd0e1700828.jpeg">
+            <h3>KIDS ZIPPER HOODIE WRQ BLACK</h3>
+            <h2>14.400₸</h2>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h2>QAZAQ REPUBLIC</h2>
+            <div class="footer-links">
+                <a href="#">SHOP</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">FAQ</a>
+                <a href="#">CAREER IN QR</a>
+                <a href="#">CONTACTS</a>
+                <a href="#">PAYMENT</a>
+                <a href="#">DELIVERY</a>
+                <a href="#">REFUNDS</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">PUBLIC OFFER</a>
+                <a href="#">FOR CORPORATE CLIENTS</a>
+            </div>
+            <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-button" target="_blank">
+                <img src="https://avatars.mds.yandex.net/i?id=6c9c9c00625857156f631eecf3185caecdc8cf0d-4538204-images-thumbs&n=13" alt="WhatsApp">
+            </a>
+            <div class="newsletter">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <button id="submitEmail">Subscribe</button>
+                <p id="message"></p>
+                        </div>
+                        <script>
+                            const emailInput = document.getElementById("email");
+                            const submitButton = document.getElementById("submitEmail");
+                            const message = document.getElementById("message");
+                    
+                
+                            submitButton.addEventListener("click", function() {
+                                const email = emailInput.value;
+                    
+                        
+                                if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                                    message.textContent = "Thank you! Your e-mail has been submitted.";
+                                    message.style.color = "green";
+                                } else {
+                                    message.textContent = "Please enter a valid e-mail address.";
+                                    message.style.color = "red";
+                                }
+                            });
+                        </script>
+                    </div>
+    </footer>
+</body>
+</html>

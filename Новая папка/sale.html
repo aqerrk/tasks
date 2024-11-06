@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <STYLE>
+        body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.top-bar span {
+    margin: 0 10px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111AAE;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.navbar {
+    position: sticky;
+    top: 40px; 
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    z-index: 999;
+}
+.navbar a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition:color 0,5s ease;
+}
+.navbar a:hover{
+    color:red
+}
+
+.navbar a.sale {
+    color: red;
+}
+.top-bar {
+    background-color: #111AAE;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.top-bar span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-bar .scrolling-text {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+main img{
+    width: 100%;
+    object-fit: cover;
+}
+footer {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #666;
+}
+.top-bar {
+    background-color: #111AAE;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.top-bar span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-bar .scrolling-text {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+@media (max-width:480px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+   
+    .navbar {
+        padding: 10px;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+
+    .top-bar {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .navbar {
+        font-size: 12px;
+    }
+
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+    </STYLE>
+
+<header>
+    <div class="top-bar">
+        <div class="scrolling-text">
+            <span><b>NEW COLLECTION</b></span>
+            <span><b>•</b></span>
+            <span><b>FW24</b></span>
+            <span><b>•</b></span>
+            <span><b>NEW COLLECTION</b></span>
+            <span><b>•</b></span>
+            <span><b>FW24</b></span>
+        </div>
+    </div>
+    <nav class="navbar">
+        <a href="qr project.html"><img src="c:\Users\User\Pictures\Screenshots\Снимок экрана 2024-11-05 130646.png" style="width: 30px; height: 30px;"></a>
+        <a href="shop.html">SHOP</a>
+        <a href="lookbook.html">LOOKBOOK</a>
+        <a href="giftboxes.html">GIFTBOXES</a>
+        <a href="sale.html">SALE</a>
+        <a href="story.html">STORES</a>
+        <a href="children.html">CHILDREN</a>
+    </nav>
+</header>
+<MAIN>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\fw23-web-makets-91-sw-white-fron-5124f43828-fb5d692f72a0e609f770fa1c521ce5d5.jpeg">
+            <H3>OVERFIT SWEATHER QR X 91 WHITE</H3>
+            <H3 style="color:red">13.800₸ <s style="color:black">23.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\coach-jacket-blue-2-55ab95fc4e-927567cad7796a7bfa913ef7afa6db6d.jpeg">
+            <H3>COACH JACKET DARK BLUE</H3>
+            <H3 style="color:red">21.000₸ <s style="color:black">30.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\coach-jacket-sand-2-08f7defb8e-83f7b85680607835180322d56df001f1.jpeg">
+            <H3>COACH JACKET BEIGE</H3>
+            <H3 style="color:red">21.000₸ <s style="color:black">30.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\coach-jacket-sand-2-08f7defb8e-83f7b85680607835180322d56df001f1.jpeg">
+            <H3>JACKET ANORAK DARK GREEN</H3>
+            <H3 style="color:red">22.400₸ <s style="color:black">28.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\anorak-jacket-yellow-2-fb1b3d5713-3fce498bc4762440861262e681aee000.jpeg">
+            <H3>JACKET ANORAK MUSTARD</H3>
+            <H3 style="color:red">16.800₸ <s style="color:black">28.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\anorak-jacket-brown-2-2a4c8d701e-db20d56876181e0b23871f915f7be859.jpeg">
+            <H3>JACKET ANORAK GREY</H3>
+            <H3 style="color:red">22.400₸ <s style="color:black">28.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\fw23-web-makets-sweater-black-gr-185abf7c93-796ae109e916d7f2dc6bae2fce522893.jpeg">
+            <H3>SWEATHER DARK GREY-BLACK</H3>
+            <H3 style="color:red">15.400₸ <s style="color:black">22.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\fw23-web-makets-polo-blue-black-0ca426cadb-e0c62bddecc334a3500f71a145c00b1e.jpeg">
+            <H3>LONGSLEEVE POLO DARK BLUE-LIGHT BLUE</H3>
+            <H3 style="color:red">10.000₸ <s style="color:black">20.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\fw23-web-makets-polo-beige-f5907b8898-e0c62bddecc334a3500f71a145c00b1e.jpeg">
+            <H3>LONGSLEEVE POLO BEIGE</H3>
+            <H3 style="color:red">9.000₸ <s style="color:black">18.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\fw23-web-makets-polo-lilac-af3b7abbae-e0c62bddecc334a3500f71a145c00b1e.jpeg">
+            <H3>LONGSLEEVE POLO DARK BLUE</H3>
+            <H3 style="color:red">9.000₸ <s style="color:black">18.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\vest-army-beige-2-422b719dc1-704e238ca01b5a338f0c90ce96b20552.jpeg">
+            <H3>STREET VEST BEIGE</H3>
+            <H3 style="color:red">17.600₸ <s style="color:black">22.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\vest-army-blue-2-a915b7d8af-1e339eae3ddd91349a4b5cd3825703f6.jpeg">
+            <H3>STREET VEST DARK BLUE</H3>
+            <H3 style="color:red">17.600₸ <s style="color:black">22.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\cuban-beige-2-1377fc15a8-41904c725184c595690b05c0138c5e3b.jpeg">
+            <H3>CUBAN SHIRT BEIGE</H3>
+            <H3 style="color:red">14.400₸ <s style="color:black">18.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\short-shirt-blue-2-fff24d2ba3-b149a9d758a6dcb40d90d6b6902b7dee.jpeg">
+            <H3>SHORTSLEEVE BLUE SHIRT</H3>
+            <H3 style="color:red">8.000₸ <s style="color:black">16.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\short-shirt-yellow-2-0941374df8-c3bf0a8aa53bf76d8e55b18b116a0b92.jpeg">
+            <H3>SHORTSLEEVE SHIRT MUSTARD</H3>
+            <H3 style="color:red">8.000₸ <s style="color:black">16.000₸</s></H3>
+    </div>
+    <div class="SALE">
+        <IMG SRC="c:\Users\User\Downloads\fw23-web-makets-jeide-street-bei-9808ba6769-a9955c8404ecd60b3bfff271d793364c.jpeg">
+            <H3>STREET SHIRT BLACK-BEIGE</H3>
+            <H3 style="color:red">9.000₸ <s style="color:black">18.000₸</s></H3>
+    </div>
+</MAIN>
+  <footer>
+        <div class="footer-content">
+            <h2>QAZAQ REPUBLIC</h2>
+            <div class="footer-links">
+                <a href="#">SHOP</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">FAQ</a>
+                <a href="#">CAREER IN QR</a>
+                <a href="#">CONTACTS</a>
+                <a href="#">PAYMENT</a>
+                <a href="#">DELIVERY</a>
+                <a href="#">REFUNDS</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">PUBLIC OFFER</a>
+                <a href="#">FOR CORPORATE CLIENTS</a>
+            </div>
+            <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-button" target="_blank">
+                <img src="https://avatars.mds.yandex.net/i?id=6c9c9c00625857156f631eecf3185caecdc8cf0d-4538204-images-thumbs&n=13" alt="WhatsApp">
+            </a>
+            <div class="newsletter">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <button id="submitEmail">Subscribe</button>
+                <p id="message"></p>
+                        </div>
+                        <script>
+                            const emailInput = document.getElementById("email");
+                            const submitButton = document.getElementById("submitEmail");
+                            const message = document.getElementById("message");
+                    
+                
+                            submitButton.addEventListener("click", function() {
+                                const email = emailInput.value;
+                    
+                        
+                                if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                                    message.textContent = "Thank you! Your e-mail has been submitted.";
+                                    message.style.color = "green";
+                                } else {
+                                    message.textContent = "Please enter a valid e-mail address.";
+                                    message.style.color = "red";
+                                }
+                            });
+                        </script>
+                    </div>
+    </footer>
+</body>
+</html>

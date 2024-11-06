@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #fafdff7d;
+            font-family: Arial, sans-serif;
+        }
+
+.top-bar span {
+    margin: 0 10px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111AAE;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.navbar {
+    position: sticky;
+    top: 40px; 
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    z-index: 999;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition:color 0,5s ease;
+}
+.navbar a:hover{
+    color:red
+}
+
+.navbar a.sale {
+    color: red;
+}
+.top-bar {
+    background-color: #111AAE;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.top-bar span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-bar .scrolling-text {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+       main img{
+        width: 100%;
+       }
+       h2{
+        color: blue;
+       }
+       main{
+        display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin-top:5px;
+gap: 10px;
+       }
+       footer {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:black
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+footer p {
+    font-size: 12px;
+    color: #666;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+       @media (max-width:480px){
+        .navbar {
+        padding: 10px;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+
+    .top-bar {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+        main{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+    </style>
+      <header>
+        <div class="top-bar">
+            <div class="scrolling-text">
+                <span><b>NEW COLLECTION</b></span>
+                <span><b>•</b></span>
+                <span><b>FW24</b></span>
+                <span><b>•</b></span>
+                <span><b>NEW COLLECTION</b></span>
+                <span><b>•</b></span>
+                <span><b>FW24</b></span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="qr project.html"><img src="c:\Users\User\Pictures\Screenshots\Снимок экрана 2024-11-05 130646.png" style="width: 30px; height: 30px;"></a>
+            <a href="shop.html">SHOP</a>
+            <a href="lookbook.html">LOOKBOOK</a>
+            <a href="giftboxes.html">GIFTBOXES</a>
+            <a href="sale.html">SALE</a>
+            <a href="story.html">STORES</a>
+            <a href="children.html">CHILDREN</a>
+        </nav>
+        <h1>choose your favourite one :)</h1>
+    </header>
+    <main>
+        <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodiedogred-73ee080329-3a9faeaf863ffda939ea06d399f4b68f.jpeg">
+        <h3>HOODIE PUPPY RED</h3>
+        <h2>24.000₸</h2>
+    </div>
+    <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodiedogblue-4cf7f4d619-7b92518061d47191cfad3fc9af762d51.jpeg">
+        <h3>HOODIE PUPPY BLUE</h3>
+        <h2>24.000₸</h2>
+    </div>
+    <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodieksmint-0aacd6b205-e1230c8a95146ea645d30291b6f25187.jpeg">
+        <h3>HOODIE KÖP SÖZ BLUE</h3>
+        <h2>24.000₸</h2>
+    </div>
+    <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodieksblack-b63cb3b72d-aa402378d7b6a1294a7b2d94a46dc56c.jpeg">
+        <h3>HOODIEKOP SOZ BLACK</h3>
+        <h2>24.000₸</h2>
+    </div>
+    <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodiewrq-sbeige-dcc5f3891a-66a2d264570e1505bf858cd920dcb968.jpeg">
+        <h3>HOODIE WRQ BEIGE</h3>
+        <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodiewrq-sdark-blue-5c76f0cbce-c2d78b25e59f7d72e2efca27d54c5436.jpeg">
+        <h3>HOODIE WRQ DARK BLUE</h3>
+        <h2>22.000₸</h2>
+    </div>
+    <div class="HOODIE">
+        <img src="c:\Users\User\Downloads\hoodiebqdark-blue-0f8827346c-03ea6a1765de379b4853eca676f75562.jpeg">
+        <h3>HOODIE BORN QAZAQ DARK BLUE</h3>
+        <h2>24.000₸</h2>
+    </div>
+    <div class="HOODIE">
+        <img src="c:\Users\User\Downloads\hoodiebqred-38c337e864-4ce5cba7b469cea4caa6e176ec575cfe.jpeg">
+        <h3>HOODIE BORN QAZAQ DARK RED</h3>
+        <h2>24.000₸</h2>
+    </div>
+    <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodieskatebeigeback-d79d6b7e3e-41ec30d7ddf31abcbe079f20b87d4c06.jpeg">
+        <h3>HOODIE SOCIETY BEIGE</h3>
+        <h2>24.000₸</h2>
+        </div>
+    <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodieskatebeigeback-d79d6b7e3e-41ec30d7ddf31abcbe079f20b87d4c06.jpeg">
+            <h3>HOODIE SOCIETY BEIGE</h3>
+            <h2>24.000₸</h2>
+            </div>
+    <div class="hoodie">
+      <img src="c:\Users\User\Downloads\hoodieskateblackback-5ead4c60a4-8d6529e009e5d97aa1bb6b2721da5c24.jpeg">
+                <h3>HOODIE WRQ BLACK</h3>
+                <h2>24.000₸</h2>
+                </div>
+    <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodiewrq-bbeige-aeafd42094-95093f39b207b8f4f06404c62f447640.jpeg">
+                    <h3>HOODIE WRQ BEIGE</h3>
+                    <h2>24.000₸</h2>
+                    </div>
+    <div class="hoodie">
+        <img src="c:\Users\User\Downloads\hoodiewrq-bblue-8983419d1f-aad93a485df3d461ff56ef4d50760f91.jpeg">
+                        <h3>HOODIE WRQ BLUE</h3>
+                        <h2>24.000₸</h2>
+                        </div> 
+    <div class="hoodie">
+     <img src="c:\Users\User\Downloads\hoodiewrq-bdark-blue-3e30831821-745d1d350b9af7f3fd20ccf5cc2dcf38.jpeg">
+                        <h3>HOODIE WRQ DARK BLUE</h3>
+                        <h2>24.000₸</h2>
+                        </div> 
+ <div class="hoodie">
+     <img src="c:\Users\User\Downloads\hoodiesenbi-clublilacback-afb9432223-c3dfdc47587d9969c0bf8394ac8a8c7a.jpeg">
+                                    <h3>HOODIE SENBI CLUB VIOLET</h3>
+                                    <h2>24.000₸</h2>
+                                    </div> 
+                                    <div class="HOODIE">
+                                        <img src="c:\Users\User\Downloads\hoodiesenbi-clubblueback-4d03efc1a7-83ed5ac750541c073f528f59dbab6f2f.jpeg">
+                                        <h3>HOODIE SENBI CLUB BLUE</h3>
+                                        <h2>24.000₸</h2>
+                                    </div>
+                                    <div class="HOODIE">
+                                        <img src="c:\Users\User\Downloads\hoodiemdrnblackback-10bdb08e2f-933b7105f3793901c9cfc6bb1d1d07da.jpeg">
+                                        <h3>HOODIE MDRN BLACK</h3>
+                                        <h2>22.000₸</h2>
+                                    </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\hoodie1465orange-ba61a5fcbd-0b23c40ce4b6822b71bde64b995b0393.jpeg">
+            <h3>HOODIE EST.1465 MUSTARD</h3>
+            <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\hoodie1465mint-b13a71f217-4e2f24eb69e9fb6f164ddd5fa3f15781.jpeg">
+            <h3>HOODIE EST.1465 LIGHT BLUE</h3>
+            <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\hoodie1465green-ad5424308d-baf74960df7dbf610d3945bc2fb91c19.jpeg">
+            <h3>HOODIE EST.1465 GREEN</h3>
+            <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\hoodieqrllilac-3454984b35-f455e7c5ba1992d17163813b55be55f7.jpeg">
+            <h3>HOODIE QAZAQ REPUBLIC VIOLETY</h3>
+            <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\hoodieqrlblue-caecea24f9-fa5a4213e137d8bf069ceb8d0d68e5e4.jpeg">
+            <h3>HOODIE QAZAQ REPUBLIC BLUE</h3>
+            <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-hoodie-qrl-beige-a2c8741689-955e204d313d067d1b042c78c5387770.jpeg">
+            <h3>HOODIE QAZAQ REPUBLIC BEIGE</h3>
+            <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-hoodie-qrl-green-dca4142241-af82fb7eef90380f768bd9044dfff00d.jpeg">
+            <h3>HOODIE QAZAQ REPUBLIC GREEN</h3>
+            <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-hoodie-qrl-brown-610c4ef4bc-e066e39a64f9baca63f35cf41c74d3de.jpeg">
+            <h3>HOODIE QAZAQ REPUBLIC BROWN</h3>
+            <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\hoodieqrlblack-683ff1dcf8-d9e2b83c1c48df8146c205b021e68b01.jpeg">
+            <h3>HOODIE QAZAQ REPUBLIC BLACK</h3>
+            <h2>22.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\overfit-hoodie-beige-821a8d6cb6-0033b205add055be326ef44c2de10ddd.jpeg">
+            <h3>HOODIE SEN BEIGE</h3>
+            <h2>28.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\overfit-hoodie-green-8312faa1bf-23925cc5adedb3e11b6acdaa7141e6ab.jpeg">
+            <h3>HOODIE SEN GREEN</h3>
+            <h2>28.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\overfit-hoodie-maroon-7ea19fb9bb-e7895b5e82d192e58304040dcd8a495e.jpeg">
+            <h3>HOODIE SEN DARK RED </h3>
+            <h2>28.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\overfit-hoodie-black-6f57e1b9dc-9e8fca10547572942f520f0bd6903742.jpeg">
+            <h3>HOODIE SEN DARK BLUE </h3>
+            <h2>28.000₸</h2>
+        </div> 
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-hoodie-zipper-qr-2bbeab7a49-c4176920c4c66b5ef1b83fd0e1700828.jpeg">
+            <h3>ZIPPER HOODIE QRD GREY MELANGE </h3>
+            <h2>24.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-hoodie-zipper-qr-a1f7d88ce7-c4176920c4c66b5ef1b83fd0e1700828.jpeg">
+            <h3>ZIPPER HOODIE QRD CEMENT</h3>
+            <h2>24.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-hoodie-zipper-qr-bddc58d613-c4176920c4c66b5ef1b83fd0e1700828.jpeg">
+            <h3>ZIPPER HOODIE QRD BLACK</h3>
+            <h2>24.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-hoodie-zipper-bl-2facc75cee-af82fb7eef90380f768bd9044dfff00d.jpeg">
+            <h3>ZIPPER HOODIE QRD CEMENT </h3>
+            <h2>25.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-hoodie-zipper-bl-1247a0eea5-c4176920c4c66b5ef1b83fd0e1700828.jpeg">
+            <h3>ZIPPER HOODIE QRD BLACK </h3>
+            <h2>25.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\sweatshirtmdrn-idntlight-beigeba-3ba978e128-1647dd2c5abfcddb9eab2bc59507b454.jpeg">
+            <h3>SWEATSHIRT MDRN IDENTITY WHITE </h3>
+            <h2>20.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\street-khaki-3c648adca5-0b70b0d34739d0044082d819ee6ee9b8.jpeg">
+            <h3>TROUSERS STREET KHAKI</h3>
+            <h2>23.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\street-black-3b7ab40957-8f539194988d0a9b97feef6685a27316.jpeg">
+            <h3>TROUSERS STREET BEIGE</h3>
+            <h2>23.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\wide-asty-khaki-4ff64a1476-8f9460a9a329b88030bd347260a7293c.jpeg">
+            <h3>TROUSERS WIDE KHAKI</h3>
+            <h2>25.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-wide-beige-10c7eb83b5-cfbcbe86d3b0c47284ea9b5e9d5d50f0.jpeg">
+            <h3>TROUSERS WIDE BEIGE</h3>
+            <h2>25.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-web-makets-wide-blue-134762ad9d-60715cf1a6b52f0e84d6e413e084e990.jpeg">
+            <h3>TROUSERS WIDE DARK BLUE</h3>
+            <h2>26.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\wide-beige-2-eae12c3b7a-3ef84b64b80945b08362655c735980e4.jpeg">
+            <h3>TROUSERS CARGO DARK BEIGE</h3>
+            <h2>26.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\cargo-black-b6c3dd8a18-1abd75b956f04ec874c383d4d3c791a5.jpeg">
+            <h3>TROUSERS CARGO GRAPHITE</h3>
+            <h2>26.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\cargo-brown-5dae5169af-f4d607971b341d249131128580146055.jpeg">
+            <h3>TROUSERS CARGO DARK BEIGE</h3>
+            <h2>26.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\training-pants-3-0d9e5c4877-dbbea62ab43840b7c3d843306ac25a16.jpeg">
+            <h3>TROUSERS TRACK BLACK</h3>
+            <h2>20.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\ushankabeige-c13f81e931-f9f32c3756b1111ed29fa9db967f5025.jpeg">
+            <h3>EARFLAPS WRQ BEIGE</h3>
+            <h2>10.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\ushankablue-1ceaf66348-61d5c032a2b7276c31374df8a5df33bc.jpeg">
+            <h3>EARFLAPS WRQ DARK BLUE</h2>
+            <h2>10.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\ushankagreen-99d579ff20-91450bedd12ab4bb6d7cb601f6ee6a83.jpeg">
+            <h3>EARFLAPS WRQ KHAKI</h2>
+            <h2>10.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-kepka-brown-2-320298d440-7af557067e57dc3b9589c47a3972fb01.jpeg">
+            <h3>CAP QR BEIGE</h2>
+            <h2>8.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\fw23-kepka-cherry-2-abb9472879-80a7a957fc516bc83f5faddf74b619a0.jpeg">
+            <h3>CAP QR RED</h2>
+            <h2>8.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\ss-23-kepka-black-2-f11975213f-305856512adcf4d868d806e68bfea1fe.jpeg">
+            <h3>CAP QR BLACK</h2>
+            <h2>8.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\we-are-qrblack-c19a4ff1cc-6f4f3e1586e30f0b2b1fcee1b8750db3.jpeg">
+            <h3>BAG WRQ BLACK</h2>
+            <h2>9.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\senbi-clubblue-1ad004651c-62378c77b22e8633ba89d4655359779a.jpeg">
+            <h3>BAG SENBI CLUB BLUE</h2>
+            <h2>9.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\somkeminiqrdbeige-aa43c84dc3-4ca52814cc250c748e5ad5feab032fdc.jpeg">
+            <h3>MINI BAG QAZAQ REPUBLIC BEIGE</h2>
+            <h2>9.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\untitled-1-1-7ec14c811f-a15d3cd7f4af00170ba90681739197f0.jpeg">
+            <h3>STICKERPACK</h2>
+            <h2>1.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\sticker-site-d55d17200e-6094294c15b8bfa1e21a4de4a5f82bad.jpeg">
+            <h3>STICKERPACK</h2>
+            <h2>1.000₸</h2>
+        </div>
+        <div class="hoodie">
+            <img src="c:\Users\User\Downloads\stickerweb-bf49b78663-013e5d9f52a4fc78aaefb08ffaa7cf95.jpeg">
+            <h3>STICKERPACK QRx91</h2>
+            <h2>1.500₸</h2>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h2>QAZAQ REPUBLIC</h2>
+            <div class="footer-links">
+                <a href="#">SHOP</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">FAQ</a>
+                <a href="#">CAREER IN QR</a>
+                <a href="#">CONTACTS</a>
+                <a href="#">PAYMENT</a>
+                <a href="#">DELIVERY</a>
+                <a href="#">REFUNDS</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">PUBLIC OFFER</a>
+                <a href="#">FOR CORPORATE CLIENTS</a>
+            </div>
+            <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-button" target="_blank">
+                <img src="https://avatars.mds.yandex.net/i?id=6c9c9c00625857156f631eecf3185caecdc8cf0d-4538204-images-thumbs&n=13" alt="WhatsApp">
+            </a>
+            <div class="newsletter">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <button id="submitEmail">Subscribe</button>
+                <p id="message"></p>
+                        </div>
+                        <script>
+                            const emailInput = document.getElementById("email");
+                            const submitButton = document.getElementById("submitEmail");
+                            const message = document.getElementById("message");
+                    
+                
+                            submitButton.addEventListener("click", function() {
+                                const email = emailInput.value;
+                    
+                        
+                                if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                                    message.textContent = "Thank you! Your e-mail has been submitted.";
+                                    message.style.color = "green";
+                                } else {
+                                    message.textContent = "Please enter a valid e-mail address.";
+                                    message.style.color = "red";
+                                }
+                            });
+                        </script>
+                    </div>
+    </footer>
+</body>
+</html>

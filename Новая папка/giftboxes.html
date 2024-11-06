@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+     body{
+            background-color: #fafdff7d;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar span {
+    margin: 0 10px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111AAE;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.navbar {
+    position: sticky;
+    top: 40px; 
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    z-index: 999;
+}
+.navbar a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition:color 0,5s ease;
+}
+.navbar a:hover{
+    color:red
+}
+
+.navbar a.sale {
+    color: red;
+}
+.top-bar {
+    background-color: #111AAE;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.top-bar span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-bar .scrolling-text {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.box img{
+    width: 100%;
+    object-fit: cover;
+}
+.box h4{
+    color:blue;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+    
+       footer {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+footer p {
+    font-size: 12px;
+    color: #666;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+@media (max-width:480px){
+        .navbar {
+        padding: 10px;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+
+    .top-bar {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+        main{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+  </style>
+  <header>
+    <div class="top-bar">
+        <div class="scrolling-text">
+            <span><b>NEW COLLECTION</b></span>
+            <span><b>•</b></span>
+            <span><b>FW24</b></span>
+            <span><b>•</b></span>
+            <span><b>NEW COLLECTION</b></span>
+            <span><b>•</b></span>
+            <span><b>FW24</b></span>
+        </div>
+    </div>
+    <nav class="navbar">
+        <a href="qr project.html"><img src="c:\Users\User\Pictures\Screenshots\Снимок экрана 2024-11-05 130646.png" style="width: 30px; height: 30px;"></a>
+        <a href="shop.html">SHOP</a>
+        <a href="lookbook.html">LOOKBOOK</a>
+        <a href="giftboxes.html">GIFTBOXES</a>
+        <a href="sale.html">SALE</a>
+        <a href="story.html">STORES</a>
+        <a href="children.html">CHILDREN</a>
+    </nav>
+    <h1>giftboxes</h1>
+</header>
+    <main>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9355-ca9cfcd77b-5540f5122779f03f5b51515057837057.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>40.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9684-6ec6df0ed4-7b4903621545377259479ab85de95acd.jpeg">
+            <h3>GIFTBOX S</h3>
+            <h4>30.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9824-4152aadd67-8e5e8f4a2b4e00874e547c72d16541c0.jpeg">
+            <h3>GIFTBOX S</h3>
+            <h4>31.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9459-8867ac0118-786711c276a96b761540483504704d72.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>13.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9622-248205a901-d6dc01b8eb4cd19b93bdc41c390ce748.jpeg">
+            <h3>GIFTBOX S</h3>
+            <h4>3000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9649-031438868e-8d44b487980be8bdbdb3ac6cabe30ff8.jpeg">
+            <h3>GIFTBOX S</h3>
+            <h4>3000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9373-aa6309f509-174db9c9bea59ca4e97e508acf211c78.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>23.200₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9387-31385a7af1-edd05c8424f4a6f75577df6ab4ac496a.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>40.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9521-26cf0a9474-d0e37eebcb578b0e90380d5b92735603.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>26.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9402-21f7eb0f82-14fc0591f0fc6874a3972f2b2af3dfb2.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>40.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9480-65783a2fa2-135027ef0388647c49a4e8d44e794a64.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>27.200₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9526-0962ec2da1-b0eb8f2e30492f7938138923147f80eb.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>39.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9845-7cdf1d8367-57822c8f3744dc57813be3def98fc733.jpeg">
+            <h3>GIFTBOX S</h3>
+            <h4>13.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9576-427b2b7850-9442b81be54974a67b35ee0963ddcddd.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>27.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9675-fb3d99a52e-f2173d288c7e5ffc8eecebc17d74e11e.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>19.000₸</h4>
+        </div>
+        <div class="box">
+            <img src="c:\Users\User\Downloads\dscf9848-b32c67681f-14b7c9abae347c4b78bccddd92952769.jpeg">
+            <h3>GIFTBOX L</h3>
+            <h4>15.000₸</h4>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h2>QAZAQ REPUBLIC</h2>
+            <div class="footer-links">
+                <a href="#">SHOP</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">FAQ</a>
+                <a href="#">CAREER IN QR</a>
+                <a href="#">CONTACTS</a>
+                <a href="#">PAYMENT</a>
+                <a href="#">DELIVERY</a>
+                <a href="#">REFUNDS</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">PUBLIC OFFER</a>
+                <a href="#">FOR CORPORATE CLIENTS</a>
+            </div>
+            <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-button" target="_blank">
+                <img src="https://avatars.mds.yandex.net/i?id=6c9c9c00625857156f631eecf3185caecdc8cf0d-4538204-images-thumbs&n=13" alt="WhatsApp">
+            </a>
+            <div class="newsletter">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <button id="submitEmail">Subscribe</button>
+                <p id="message"></p>
+                        </div>
+                        <script>
+                            const emailInput = document.getElementById("email");
+                            const submitButton = document.getElementById("submitEmail");
+                            const message = document.getElementById("message");
+                    
+                
+                            submitButton.addEventListener("click", function() {
+                                const email = emailInput.value;
+                    
+                        
+                                if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                                    message.textContent = "Thank you! Your e-mail has been submitted.";
+                                    message.style.color = "green";
+                                } else {
+                                    message.textContent = "Please enter a valid e-mail address.";
+                                    message.style.color = "red";
+                                }
+                            });
+                        </script>
+                    </div>
+    </footer>
+</body>
+</html>

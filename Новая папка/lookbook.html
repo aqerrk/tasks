@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #fafdff7d;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar span {
+    margin: 0 10px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111AAE;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.navbar {
+    position: sticky;
+    top: 40px; 
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    z-index: 999;
+}
+.navbar a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition:color 0,5s ease;
+}
+.navbar a:hover{
+    color:red
+}
+
+.navbar a.sale {
+    color: red;
+}
+.top-bar {
+    background-color: #111AAE;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.top-bar span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-bar .scrolling-text {
+    display: inline-block;
+    animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+       main img{
+        width: 100%;
+       }
+       main img{
+        width: 100%;
+       }
+       main{
+        display: grid;
+grid-template-columns: 1fr 1fr;
+margin-top:5px;
+gap: 5px;
+       }
+       footer {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+footer p {
+    font-size: 12px;
+    color: #666;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+       @media (max-width:480px){
+        .navbar {
+        padding: 10px;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+
+    .top-bar {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+        main{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h2 {
+        font-size: 18px;
+        color: black;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+    </style>
+       <header>
+        <div class="top-bar">
+            <div class="scrolling-text">
+                <span><b>NEW COLLECTION</b></span>
+                <span><b>•</b></span>
+                <span><b>FW24</b></span>
+                <span><b>•</b></span>
+                <span><b>NEW COLLECTION</b></span>
+                <span><b>•</b></span>
+                <span><b>FW24</b></span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="qr project.html"><img src="c:\Users\User\Pictures\Screenshots\Снимок экрана 2024-11-05 130646.png" style="width: 30px; height: 30px;"></a>
+            <a href="shop.html">SHOP</a>
+            <a href="lookbook.html">LOOKBOOK</a>
+            <a href="giftboxes.html">GIFTBOXES</a>
+            <a href="sale.html">SALE</a>
+            <a href="story.html">STORES</a>
+            <a href="children.html">CHILDREN</a>
+        </nav>
+        <h1>lookbook</h1>
+    </header>
+    <main>
+        <div class="lookbook">
+            <img src="c:\Users\User\Downloads\Telegram Desktop\photo_9_2024-11-05_10-00-09.jpg">
+        </div>
+        <div class="lookbook">
+            <img src="c:\Users\User\Downloads\Telegram Desktop\photo_7_2024-11-05_10-00-09.jpg">
+        </div>
+        <div class="lookbook">
+            <img src="c:\Users\User\Downloads\Telegram Desktop\photo_11_2024-11-05_10-00-09.jpg">
+        </div>
+        <div class="lookbook">
+            <img src="c:\Users\User\Downloads\Telegram Desktop\photo_10_2024-11-05_10-00-09.jpg">
+        </div>
+        <div class="lookbook">
+            <img src="c:\Users\User\Downloads\Telegram Desktop\photo_17_2024-11-05_10-00-09.jpg">
+        </div>
+        <div class="lookbook">
+            <img src="c:\Users\User\Downloads\Telegram Desktop\photo_16_2024-11-05_10-00-09.jpg">
+        </div>
+        <div class="lookbook">
+            <img src="c:\Users\User\Downloads\Telegram Desktop\photo_6_2024-11-05_10-00-09.jpg">
+        </div>
+        <div class="lookbook">
+            <img src="c:\Users\User\Downloads\Telegram Desktop\photo_12_2024-11-05_10-00-09.jpg">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h2>QAZAQ REPUBLIC</h2>
+            <div class="footer-links">
+                <a href="#">SHOP</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">FAQ</a>
+                <a href="#">CAREER IN QR</a>
+                <a href="#">CONTACTS</a>
+                <a href="#">PAYMENT</a>
+                <a href="#">DELIVERY</a>
+                <a href="#">REFUNDS</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">PUBLIC OFFER</a>
+                <a href="#">FOR CORPORATE CLIENTS</a>
+            </div>
+            <a href="https://wa.me/yourwhatsappnumber" class="whatsapp-button" target="_blank">
+                <img src="https://avatars.mds.yandex.net/i?id=6c9c9c00625857156f631eecf3185caecdc8cf0d-4538204-images-thumbs&n=13" alt="WhatsApp">
+            </a>
+            <div class="newsletter">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <button id="submitEmail">Subscribe</button>
+                <p id="message"></p>
+                        </div>
+                        <script>
+                            const emailInput = document.getElementById("email");
+                            const submitButton = document.getElementById("submitEmail");
+                            const message = document.getElementById("message");
+                    
+                
+                            submitButton.addEventListener("click", function() {
+                                const email = emailInput.value;
+                    
+                        
+                                if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                                    message.textContent = "Thank you! Your e-mail has been submitted.";
+                                    message.style.color = "green";
+                                } else {
+                                    message.textContent = "Please enter a valid e-mail address.";
+                                    message.style.color = "red";
+                                }
+                            });
+                        </script>
+                    </div>
+    </footer>
+</body>
+</html>
